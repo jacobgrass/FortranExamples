@@ -1,0 +1,37 @@
+! The usual set of arithmetic operators are available, listed in order of
+! precedence:
+!
+! Operator     Description
+!
+! **         Exponent
+!
+! *          Multiplication
+!
+! /          Division
+!
+! +          Addition
+!
+! -          Subtraction
+
+program arithmetic
+   implicit none
+
+   real :: pi, radius, height, area, volume
+
+   pi = 3.1415927
+
+   print *, 'Enter cylinder base radius:'
+   read (*, *) radius
+
+   print *, 'Enter cylinder height:'
+   read (*, *) height
+
+   area = pi*radius**2
+   volume = area*height
+
+   print *, 'Cylinder radius is: ', radius
+   print *, 'Cylinder height is: ', height
+   print *, 'Cylinder base area is: ', area
+   print *, 'Cylinder volume is: ', volume
+
+end program arithmetic
